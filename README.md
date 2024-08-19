@@ -72,7 +72,7 @@ Indicators: Various indicators used by the bot.
 Each bot comes with a set of configurable parameters. These parameters can be adjusted to fit your trading strategy. The parameters include:
 
 ## Time-based Configurations
-'''
+```
 input int InpTimeFrameStart = 9;                                           // Start time for trade execution (in hours)
 input int InpTimeFrameEnd = 17;                                            // End time for trade execution (in hours)
 
@@ -96,10 +96,10 @@ input double InpRewardPercentage = 2.0;                                    // Us
 input double InpStopLoss = 20.0;                                           // User-defined  stop loss value
 input bool InpEnableTrailingStop = false;                                  // Enable trailing stop loss
 input bool InpAllowBothTypePositions = false;                              // Allow both position types to be openned at the same time
-'''
+```
 
 ## Indicator Configurations
-'''
+```
 extern string PriceTypes = "0=close, 1=open, 2=high, 3=low, 4=median, 5=typical, 6=weighted";
 extern string MATypes = "0=simple, 1=exponential, 2=smoothed, 3=linear-weighted";
 input int InpRSIBaselinePeriod = 10;                                       // Baseline period
@@ -109,10 +109,10 @@ input int InpRSIPriceLine = 2;                                             // RS
 input int InpRSIPriceType = 1;                                             // Type of MA to use for price action
 input int InpTradeSignalLine = 7;                                          // RSI MA period for signal
 input int InpTradeSignalType = 0;                                          // Type of MA to use for signal
-'''
+```
 
 ## Strategy-based Configurations
-'''
+```
 input bool InpTDICrossoverFiftyMiddleStrategy = false;      				   // Open trades based on TDI crossover and middle abce 50 indicators
 input bool InpTDICrossoverAboveBelowMiddleStrategy = false;             	// Open trades based on TDI crossover and price and signal above/below middle indicators
 input bool InpTDICrossoverFiftyAboveBelowMiddleHAStrategy = false;         // Open trades based on TDI Crossover, middle above 50, price and signal above middle, and HA indicators
@@ -124,7 +124,7 @@ Info-based Configurations
 input bool InpShowExpertConfigInfo = true;                                 // Show expert advisor configuration information
 input bool InpShowExpertTradeInfo = true;                                  // Show expert advisor trade info (stop loss, take profit, etc.)
 input color InpInfoColor = clrWhite;                                       // Color used for color for info to chart
-'''
+```
 
 ### License
 
